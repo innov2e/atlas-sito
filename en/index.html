@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>INNOV2E Atlas</title>
+    <meta
+      name="description"
+      content="INNOV2E Atlas reads the Export of a Caspio app and gives you its documentation, its dependency map and a list of what is no longer needed. All on your Mac."
+    />
+    <link rel="canonical" href="https://atlas.innov2e.it/en/" />
+    <link rel="alternate" hreflang="it" href="https://atlas.innov2e.it/" />
+    <link rel="alternate" hreflang="en" href="https://atlas.innov2e.it/en/" />
+    <link rel="stylesheet" href="/stile.css" />
+  </head>
+  <body>
+    <header class="contenitore testata">
+      <a class="marchio" href="/en/"><span>INNOV2E</span> Atlas</a>
+      <a class="lingua" href="/" lang="it" hreflang="it">Italiano</a>
+    </header>
+
+    <main>
+      <section class="contenitore apertura">
+        <div>
+          <p class="etichetta">Free Edition · macOS</p>
+          <h1>Understand how a Caspio app is built before you change it.</h1>
+          <p class="sommario">
+            INNOV2E Atlas reads the Export of your app and gives you documentation for every object,
+            a map of what depends on what, and a list of what is no longer needed.
+          </p>
+
+          <!-- BEFORE THE FIRST RELEASE: «coming soon» block.
+               At the first public release replace it with the commented block below. -->
+          <div class="scarica">
+            <span class="in-arrivo">The first version is coming soon</span>
+            <p class="requisiti">macOS 12 or later, Mac with Apple Silicon.</p>
+          </div>
+          <!--
+          <div class="scarica">
+            <a class="pulsante" href="https://github.com/innov2e/I2E-atlas-releases/releases/latest">Download for Mac</a>
+            <p class="requisiti">.dmg file from GitHub. macOS 12 or later, Mac with Apple Silicon.</p>
+          </div>
+          -->
+        </div>
+
+        <svg
+          class="mappa"
+          viewBox="0 0 440 320"
+          role="img"
+          aria-label="Sample diagram: tables, views and DataPages linked together, with one unused object and one broken reference."
+        >
+          <rect class="riquadro" x="0.5" y="0.5" width="439" height="319" rx="12" />
+          <path class="legame" d="M92 84 L210 60" />
+          <path class="legame" d="M92 84 L200 160" />
+          <path class="legame" d="M210 60 L340 96" />
+          <path class="legame" d="M200 160 L340 96" />
+          <path class="legame" d="M200 160 L318 214" />
+          <path class="legame" d="M104 236 L200 160" />
+          <path class="legame-rotto" d="M318 214 L372 270" />
+          <circle class="nodo" cx="92" cy="84" r="20" />
+          <circle class="nodo" cx="210" cy="60" r="14" />
+          <circle class="nodo" cx="200" cy="160" r="24" />
+          <circle class="nodo" cx="340" cy="96" r="16" />
+          <circle class="nodo" cx="318" cy="214" r="14" />
+          <circle class="nodo" cx="104" cy="236" r="14" />
+          <circle class="nodo-ok" cx="92" cy="84" r="5" />
+          <circle class="nodo-ok" cx="200" cy="160" r="5" />
+          <circle class="nodo-ok" cx="340" cy="96" r="5" />
+          <circle class="nodo-attenzione" cx="318" cy="214" r="5" />
+          <circle class="nodo-obsoleto" cx="238" cy="268" r="9" />
+          <text x="92" y="50" text-anchor="middle">Table</text>
+          <text x="210" y="36" text-anchor="middle">View</text>
+          <text x="340" y="68" text-anchor="middle">DataPage</text>
+          <text x="238" y="296" text-anchor="middle">Unused</text>
+          <text x="372" y="290" text-anchor="middle">Broken reference</text>
+        </svg>
+      </section>
+
+      <section class="contenitore sezione">
+        <h2>What you find inside the Export</h2>
+        <p>
+          An app grows for years, changes hands, and collects copies and experiments. Atlas reads
+          all of it and tells you what is there, what is connected and what you can remove.
+        </p>
+        <ul class="tre">
+          <li>
+            <h3>Documentation</h3>
+            <p>
+              Tables, fields, views, DataPages, authentications, triggered actions and scheduled
+              tasks: one page per object, exported as HTML or Markdown.
+            </p>
+          </li>
+          <li>
+            <h3>The map</h3>
+            <p>
+              A 2D and 3D graph of dependencies. Pick an object and see what uses it and what breaks
+              if you change it.
+            </p>
+          </li>
+          <li>
+            <h3>Issues</h3>
+            <p>
+              Fields never used or always empty, orphan tables and views, backup copies, disabled
+              triggers, expired tasks, broken references.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="contenitore sezione">
+        <h2>The Export stays on your Mac</h2>
+        <p>
+          Atlas works locally. It has no account, collects no usage statistics, and sends neither
+          the Export nor your Project data anywhere.
+        </p>
+        <ul class="elenco">
+          <li>It works offline.</li>
+          <li>
+            It goes online only to look for an update, and only when you ask: with
+            <em>Check now</em>, or by turning on <em>Check at startup</em>, which is off by default.
+          </li>
+          <li>
+            In that case it contacts atlas.innov2e.it to see whether a new version exists and
+            github.com to download it. Every package is verified with a signature before it is
+            installed.
+          </li>
+          <li>The app is signed and notarized by Apple.</li>
+        </ul>
+      </section>
+
+      <section class="contenitore sezione">
+        <div class="riquadro-innov2e">
+          <div>
+            <h2>Have a Caspio app to migrate or fix?</h2>
+            <p>INNOV2E audits and migrates Caspio apps.</p>
+          </div>
+          <a class="pulsante" href="https://innov2e.it/">Visit the INNOV2E site</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="contenitore pie">
+      <p>INNOV2E Atlas, Free Edition. A product by INNOV2E.</p>
+      <p>
+        Caspio, Caspio Bridge, DataPages, and AppKey are trademarks of Caspio, Inc. INNOV2E Atlas is
+        not affiliated with or endorsed by Caspio, Inc.
+      </p>
+    </footer>
+  </body>
+</html>

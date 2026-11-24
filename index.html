@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>INNOV2E Atlas</title>
+    <meta
+      name="description"
+      content="INNOV2E Atlas legge l'Export di un'app Caspio e ne ricava la documentazione, la mappa delle dipendenze e l'elenco di ciò che non serve più. Tutto in locale, su Mac."
+    />
+    <link rel="canonical" href="https://atlas.innov2e.it/" />
+    <link rel="alternate" hreflang="it" href="https://atlas.innov2e.it/" />
+    <link rel="alternate" hreflang="en" href="https://atlas.innov2e.it/en/" />
+    <link rel="stylesheet" href="/stile.css" />
+  </head>
+  <body>
+    <header class="contenitore testata">
+      <a class="marchio" href="/"><span>INNOV2E</span> Atlas</a>
+      <a class="lingua" href="/en/" lang="en" hreflang="en">English</a>
+    </header>
+
+    <main>
+      <section class="contenitore apertura">
+        <div>
+          <p class="etichetta">Edizione gratuita · macOS</p>
+          <h1>Capisci com'è fatta un'app Caspio, prima di metterci mano.</h1>
+          <p class="sommario">
+            INNOV2E Atlas legge l'Export della tua app e ti restituisce la documentazione di ogni
+            oggetto, la mappa di cosa dipende da cosa e l'elenco di ciò che non serve più.
+          </p>
+
+          <!-- PRIMA DEL PRIMO RILASCIO: blocco «in arrivo».
+               Al primo rilascio pubblico sostituiscilo con il blocco commentato qui sotto. -->
+          <div class="scarica">
+            <span class="in-arrivo">La prima versione è in arrivo</span>
+            <p class="requisiti">macOS 12 o successivo, Mac con Apple Silicon.</p>
+          </div>
+          <!--
+          <div class="scarica">
+            <a class="pulsante" href="https://github.com/innov2e/I2E-atlas-releases/releases/latest">Scarica per Mac</a>
+            <p class="requisiti">File .dmg da GitHub. macOS 12 o successivo, Mac con Apple Silicon.</p>
+          </div>
+          -->
+        </div>
+
+        <svg
+          class="mappa"
+          viewBox="0 0 440 320"
+          role="img"
+          aria-label="Schema di esempio: tabelle, viste e DataPage collegate tra loro, con un oggetto senza usi e un riferimento interrotto."
+        >
+          <rect class="riquadro" x="0.5" y="0.5" width="439" height="319" rx="12" />
+          <path class="legame" d="M92 84 L210 60" />
+          <path class="legame" d="M92 84 L200 160" />
+          <path class="legame" d="M210 60 L340 96" />
+          <path class="legame" d="M200 160 L340 96" />
+          <path class="legame" d="M200 160 L318 214" />
+          <path class="legame" d="M104 236 L200 160" />
+          <path class="legame-rotto" d="M318 214 L372 270" />
+          <circle class="nodo" cx="92" cy="84" r="20" />
+          <circle class="nodo" cx="210" cy="60" r="14" />
+          <circle class="nodo" cx="200" cy="160" r="24" />
+          <circle class="nodo" cx="340" cy="96" r="16" />
+          <circle class="nodo" cx="318" cy="214" r="14" />
+          <circle class="nodo" cx="104" cy="236" r="14" />
+          <circle class="nodo-ok" cx="92" cy="84" r="5" />
+          <circle class="nodo-ok" cx="200" cy="160" r="5" />
+          <circle class="nodo-ok" cx="340" cy="96" r="5" />
+          <circle class="nodo-attenzione" cx="318" cy="214" r="5" />
+          <circle class="nodo-obsoleto" cx="238" cy="268" r="9" />
+          <text x="92" y="50" text-anchor="middle">Tabella</text>
+          <text x="210" y="36" text-anchor="middle">Vista</text>
+          <text x="340" y="68" text-anchor="middle">DataPage</text>
+          <text x="238" y="296" text-anchor="middle">Senza usi</text>
+          <text x="372" y="290" text-anchor="middle">Riferimento interrotto</text>
+        </svg>
+      </section>
+
+      <section class="contenitore sezione">
+        <h2>Cosa trovi dentro l'Export</h2>
+        <p>
+          Un'app cresce per anni, passa di mano, accumula copie e prove. Atlas la rilegge per intero
+          e ti dice cosa c'è, cosa è collegato e cosa puoi togliere.
+        </p>
+        <ul class="tre">
+          <li>
+            <h3>La documentazione</h3>
+            <p>
+              Tabelle, campi, viste, DataPage, autenticazioni, azioni attivate e task pianificati:
+              una scheda per ogni oggetto, da esportare in HTML o Markdown.
+            </p>
+          </li>
+          <li>
+            <h3>La mappa</h3>
+            <p>
+              Un grafo in 2D e 3D delle dipendenze. Scegli un oggetto e vedi cosa lo usa e cosa si
+              rompe se lo cambi.
+            </p>
+          </li>
+          <li>
+            <h3>Le criticità</h3>
+            <p>
+              Campi mai usati o sempre vuoti, tabelle e viste orfane, copie di backup, trigger
+              disabilitati, task scaduti, riferimenti interrotti.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="contenitore sezione">
+        <h2>L'Export resta sul tuo Mac</h2>
+        <p>
+          Atlas lavora in locale. Non ha un account, non raccoglie statistiche d'uso e non manda da
+          nessuna parte né l'Export né i dati del Progetto.
+        </p>
+        <ul class="elenco">
+          <li>Funziona senza rete.</li>
+          <li>
+            Si collega a internet solo per cercare un aggiornamento, e solo se lo chiedi tu: con
+            <em>Controlla ora</em>, oppure accendendo <em>Controlla all'avvio</em>, che parte spento.
+          </li>
+          <li>
+            In quel caso contatta atlas.innov2e.it per sapere se c'è una versione nuova e github.com
+            per scaricarla. Ogni pacchetto è verificato con una firma prima di essere installato.
+          </li>
+          <li>L'app è firmata e notarizzata da Apple.</li>
+        </ul>
+      </section>
+
+      <section class="contenitore sezione">
+        <div class="riquadro-innov2e">
+          <div>
+            <h2>Hai un'app Caspio da migrare o sistemare?</h2>
+            <p>INNOV2E fa audit e migrazioni di app Caspio.</p>
+          </div>
+          <a class="pulsante" href="https://innov2e.it/">Vai al sito INNOV2E</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="contenitore pie">
+      <p>INNOV2E Atlas, Edizione gratuita. Un prodotto di INNOV2E.</p>
+      <p>
+        Caspio, Caspio Bridge, DataPages e AppKey sono marchi di Caspio, Inc. INNOV2E Atlas non è
+        affiliato né approvato da Caspio, Inc.
+      </p>
+    </footer>
+  </body>
+</html>
