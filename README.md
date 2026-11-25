@@ -58,7 +58,9 @@ In `index.html` e `en/index.html` il blocco «in arrivo» ha accanto, in un comm
 
 ## Regole per i testi
 
-- Il nome del prodotto è «INNOV2E Atlas», senza sottotitoli con il nome di Caspio.
+- Il nome del prodotto è «INNOV2E Atlas». Il nome di Caspio non entra nel nome, nel logo né nel dominio, e non è mai più in evidenza del marchio INNOV2E.
+- Il prodotto si descrive come strumento per «app Caspio Bridge», non «app Caspio».
+- Nessun simbolo ® accanto ai nomi di Caspio.
 - Nessun logo, grafica, schermata o testo copiato da Caspio.
 - La nota sui marchi resta in fondo a ogni pagina, uguale a quella dell'app.
 - Niente script di statistiche, niente font o risorse caricati da altri domini.
